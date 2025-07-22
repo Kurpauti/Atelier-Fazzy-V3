@@ -5,3 +5,10 @@
     text-align: center;
     padding: var(--B-PADDING);
 }
+
+/*-Menu-*/
+.menu {
+    background-color: var(--C_MENU);
+    padding: var(--B-PADDING);
+    text-align: center;
+}
