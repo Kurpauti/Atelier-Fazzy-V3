@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.CR {
+    color: #42fd4c;
+}
+.CP {
+    color: #e03535;
+}
+.CU {
+    color: #5f81ac;
+}
+
+/*-About-*/
+.about {
+    text-align: center;
+    padding: var(--B-PADDING);
+}
+
+/*-Menu-*/
+.menu {
+    background-color: var(--C_MENU);
+    padding: var(--B-PADDING);
+    text-align: center;
+}
+.tool-buttons nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.tool-buttons nav ul li {
+    background-color: var(--C_MENU-BTN1);
+    width: clamp(120px, 32vw, 250px);
+    max-height: 300px;
+}
+.tool-buttons nav ul li:hover {
+    background-color: var(--C_MENU-BTN2);
+}
+.tool-buttons nav ul li a img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25%;
+    margin-bottom: -10px;
+}
+
+/*-スマホ用-*/
+@media (max-width: 600px) {
+  .tool-buttons nav ul {
+    gap: 4px;
+  }
+  .tool-buttons nav ul li {
+    width: 48%;
+    margin-bottom: 10px;
+    max-width: none;
+  }
+}

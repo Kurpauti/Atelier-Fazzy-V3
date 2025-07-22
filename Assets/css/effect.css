@@ -1,0 +1,19 @@
+.square-effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #72d4c7;
+    background: transparent;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    animation: square-anim 0.35s linear forwards;
+    z-index: 9999;
+}
+
+@keyframes square-anim {
+    to {
+        transform: translate(-50%, -50%) scale(2) rotate(90deg);
+        opacity: 0;
+        border-color: #72d4c7;
+    }
+}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/*-About-*/
+.about {
+    text-align: center;
+    padding: var(--B-PADDING);
+}

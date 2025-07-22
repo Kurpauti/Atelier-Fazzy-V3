@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*-About-*/
+.about {
+    text-align: center;
+    padding: var(--B-PADDING);
+}
+
+/*-Menu-*/
+.menu {
+    background-color: var(--C_MENU);
+    padding: var(--B-PADDING);
+    text-align: center;
+}
+.menu table {
+    margin: 0 auto;
+    text-align: left;
+}
+.menu td {
+    padding: 10px;
+}

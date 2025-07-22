@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*-About-*/
+.about {
+    text-align: center;
+    padding: var(--B-PADDING);
+}
+
+/*-Profile-*/
+.profile {
+    background-color: var(--C_MENU);
+    padding: var(--B-PADDING);
+    text-align: center;
+}
+.profile-content figure {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.profile-content img {
+    width: 150px;
+    height: auto;
+    box-shadow: 0px 4px 8px #726f53;
+}
+.text-content {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+    .profile-content figure {
+        gap: 8px;
+    }
+    .profile-content img {
+        width: 44vw;
+        max-width: 130px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>KRPT-UniCoder v3</title>
+    <link rel="stylesheet" href="tool01.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1 id="title">KRPT-UniCoder v3</h1>
+            <div class="lang-area">
+                <label for="langSelect">Language:</label>
+                <select id="langSelect">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </header>
+        <section id="description" class="description">
+            <p id="descText"></p>
+        </section>
+        <section class="center-area">
+            <div id="drop-zone" class="drop-zone">
+                <p id="dropText"></p>
+                <input type="file" id="fileInput" accept=".json">
+            </div>
+            <div id="filenameLabel" style="margin-bottom:8px;"></div>
+            <div id="statsArea" style="margin:12px 0;">
+                <span id="charCountLabel"></span>
+                <span id="fileSizeLabel" style="margin-left:2em;"></span>
+            </div>
+            <div id="option-viewer-area" style="display:none;">
+                <div id="error-area" style="display:none; color:#d00; margin-bottom:10px;"></div>
+                <div id="option-area" class="option-area">
+                    <h2 id="optionTitle"></h2>
+                    <form id="encryptForm">
+                        <label for="option1">
+                            <input type="checkbox" id="option1">
+                        </label>
+                        <label for="option2">
+                            <input type="checkbox" id="option2">
+                        </label>
+                        <label for="option3">
+                            <input type="checkbox" id="option3">
+                        </label>
+                    </form>
+                </div>
+                <div id="file-viewer" class="file-viewer">
+                    <h2 id="viewerTitle"></h2>
+                    <div id="file-content" class="file-content"></div>
+                </div>
+                <div class="action-buttons">
+                    <button id="importAgainBtn"></button>
+                    <button id="exportBtn"></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="noticeArea" class="description" style="margin-top: 5px; margin-bottom: 10px;"></div>
+        </section>
+    </div>
+    <script src="tool01.js"></script>
+</body>
+</html>

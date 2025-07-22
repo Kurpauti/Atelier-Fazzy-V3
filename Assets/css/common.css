@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*-リセット部分-*/
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+}
+
+/* ヘッダーボタンのデザイン */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+header nav ul li a {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 12px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+@media (max-width: 600px) {
+    header nav ul {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+    header nav ul li a {
+        padding: 8px 6px;
+        font-size: 15px;
+    }
+}
+header nav ul li a:hover {
+    background: #2b2b2b;
+    color: #FFF;
+    transform: scale(1.1);
+}
+header img {
+    width: 40%;
+}
+
+/*-共通部分-*/
+:root {
+    --C_CHAR: #000;
+    --C_BACK: #f3edd6;
+    --C_MENU: #d3c6a9;
+    --C_MENU-BTN1: #bdad8c;
+    --C_MENU-BTN2: #96886c;
+
+    --C_GRAY: #333;
+
+    --B-MARGIN: 20px;
+    --B-PADDING: 30px;
+}
+body {
+    color: var(--C_CHAR);
+    background-color: var(--C_BACK);
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    /*background-color: red;*/
+}
+h2 {
+    font-size: clamp(24px, 3vw, 36px);
+}
+h3 {
+    font-size: clamp(16px, 3vw, 24px);
+    margin-bottom: var(--B-MARGIN);
+}
+.en_US {
+    color: #636363;
+}
+
+/*-ヘッダ-*/
+header {
+    color: #fff;
+    background-color: var(--C_GRAY);
+    padding: 16px;
+    text-align: center;
+}
+header h1 {
+    font-size: clamp(40px, 6vw, 60px);
+}
+header p {
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: var(--B-MARGIN);
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*-ファーストビュー-*/
+.hero img {
+    width: 100%;
+}
+
+/*-フッター-*/
+footer {
+    background-color: var(--C_GRAY);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 8px;
+}
+.footer-icons a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+.footer-icons a:hover {
+    transform: scale(1.1);
+}
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/*-スクロールボタン-*/
+.scroll-btn {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 48px;
+    height: 48px;
+    border-radius: 25%;
+    border: none;
+    background: #636363;
+    color: #fff;
+    font-size: 2em;
+    box-shadow: 0 2px 8px #333;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.scroll-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
